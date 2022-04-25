@@ -1,0 +1,44 @@
+p{
+    color:blue;
+    font-family: arial;
+    font-size: 22pt;
+  }
+  p.bio{
+    color: red;
+    font-family: helvetica;
+    font-size: 20pt;
+    margin-top:5%
+  }
+
+  h1.title{
+    color: red;
+    font-family: sans-serif;
+    font-size: 30pt;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+  }
+  img.Billimg{
+  
+    max-width:40%;
+    width: auto;
+  
+  }
+  body{
+    background-image: url(3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+    background-size: 75%;
+  
+  }
+  a{
+    color: blue;
+  }
+  a:hover{
+    background-color: red;
+    color:white;
+  }
+ 

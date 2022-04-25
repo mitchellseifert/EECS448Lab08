@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Ex4.css" type="text/css"/>
+    <script>
+        function colorChange(){
+  var redBorder=document.getElementById("redBorder").value;
+  var greenBorder=document.getElementById("greenBorder").value;
+  var blueBorder=document.getElementById("blueBorder").value;
+  var redBack=document.getElementById("redBack").value;
+  var greenBack=document.getElementById("greenBack").value;
+  var blueBack=document.getElementById("blueBack").value;
+  var widBorder=document.getElementById("widBorder").value;
+      if(redBorder<0||greenBorder<0||blueBorder<0||redBorder>255||greenBorder>255||blueBorder>255){
+        alert("Incorrect color value!");
+      }
+      else if(widBorder<0){
+        alert("Incorrect Border width!");
+      }
+      else if(redBack<0||greenBack<0||blueBack<0||redBack>255||greenBack>255||blueBack>255){
+        alert("Incorrect color value!");
+      }
+        text.style.borderColor='rgb('+greenBorder+','+blueBorder+','+redBorder+')';
+        text.style.backgroundColor='rgb('+redBack+','+greenBack+','+blueBack+')';
+        text.style.borderWidth=widBorder;
+}
+    </script>
+    <title>Color Change</title>
+  </head>
+  <body>
+<h1>Color Change!</h1>
+<p id ="text">HERE IS SOME DUMMY TEXT</p>
+<br>
+The RGB range is from 0 to 255 <br>
+<br>
+
+<h1>Border:</h1>
+Red Value:<input type="text" id="redBorder"><br>
+Green Value:<input type="text" id="greenBorder"><br>
+Blue Value:<input type="text" id="blueBorder"><br>
+Width: <input type="text" id="widBorder"><br>
+<h1>Background:</h1>
+Red Value:<input type="text" id="redBack"><br>
+Green Value:<input type="text" id="greenBack"><br>
+Blue Value:<input type="text" id="blueBack"><br>
+
+<button type="button" onclick="colorChange()">Confirm Change
+</button>
+  </body>
+</html>

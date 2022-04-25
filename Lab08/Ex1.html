@@ -1,0 +1,48 @@
+<html>
+<head>
+<title> My first web page </title>
+</head>
+<body>
+    <script>
+      function validate()
+{
+    if(document.getElementById("p1").value < 8)
+    {
+        alert("Password 1 must be greater than 8 characters!") 
+    }
+    if(document.getElementById("p2").value < 8)
+    {
+        alert("Password 2 must be greater than 8 characters!") 
+    }
+    if(document.getElementById("p1").value == "")
+    {
+        alert("Password 1 cannot be blank") 
+    }
+    if(document.getElementById("p2").value == "") 
+    {  
+        alert("Password 2 cannot be blank") 
+    }    
+    if(document.getElementById("p1").value == document.getElementById("p2").value)
+    {
+        alert("Password created!")
+    }
+    
+  }  
+    </script>
+    <h1>Enter A Password</h1>
+    <p>Click the "Validate" button to check if your password is allowed. Passwords must be greater than 8 characters.</p>
+    
+    
+    <form action="/action_page.php">
+      <label for="password">Password:</label>
+      <input type="password" id="p1" name="p1" ><br><br>
+      <label for="password2">Re-Enter Password:</label>
+      <input type="password" id="p2" name="p2"  ><br><br>
+      <button type="button" onclick="validate()">Validate</button>
+    </form>    
+
+
+<img src="jayhawk.png" height="50" width="50">
+
+</body>
+</html>

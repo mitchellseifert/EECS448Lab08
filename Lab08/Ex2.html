@@ -1,0 +1,37 @@
+<meta charset = "utf-8">
+<html>
+<head>
+<title> SlideShow </title>
+<script>
+var pics = ["jayhawk.png", "jayhawk2.jpeg", "jayhawk3.jpeg", "jayhawk4.jpeg", "jayhawk5.jpeg"]
+var temp = 0
+function next(){
+  if(temp == 4){
+    jay.src=pics[0]
+    temp = 0
+  }
+  else{
+    temp++
+    jay.src = pics[temp]
+  }
+}
+function prev(){
+  if(temp == 0){
+    jay.src=pics[4]
+    temp = 4
+  }
+  else{
+    temp--
+    jay.src=pics[temp]
+  }
+  slide.src=pics[temp]
+}
+
+</script>
+</head>
+<body>
+  <img id="jay" src="jayhawk.png" height = "300" width = "300"><br>
+  <button type = "button" onclick="prev()">PREVIOUS</button>
+  <button type = "button" onclick="next()">NEXT</button>
+</body>
+</html>
